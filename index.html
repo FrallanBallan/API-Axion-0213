@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axiom</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Team builder</h2>
+        <div class="genderDiv">
+            <h5>Gender:</h5>
+            <div>
+
+                <label class="inputChoice" for="male"><input type="checkbox" class="gender" name="gender" id="male"
+                        value="male"> Male
+                </label>
+
+                <label class="inputChoice" for="male"><input type="checkbox" class="gender" name="gender" id="female"
+                        value="female">
+                    Female </label>
+            </div>
+        </div>
+        <div class="nationDiv">
+            <h5>Nationality:</h5>
+            <div>
+                <label class="inputChoice" for="gb"> <input type="checkbox" class="country" name="nation" id="gb"
+                        value="gb"> Great
+                    Brittain </label>
+                <label class="inputChoice" for="nl"><input type="checkbox" class="country" name="nation" id="nl"
+                        value="nl"> Netherlands
+                </label>
+                <label class="inputChoice" for="fr"> <input type="checkbox" class="country" name="nation" id="fr"
+                        value="fr">France
+                </label>
+                <label class="inputChoice" for="es"><input type="checkbox" class="country" name="nation" id="es"
+                        value="es"> Spain
+                </label>
+                <label class="inputChoice" for="us"> <input type="checkbox" class="country" name="nation" id="us"
+                        value="us">United
+                    States </label>
+            </div>
+        </div>
+        <button class="btn" id="btn">ADD MEMBER</button>
+        <div class="teamGrid">
+            <div class="team" id="teamA">
+                <h2>Team A</h2>
+            </div>
+            <div class="team" id="teamB">
+                <h2>Team B</h2>
+
+            </div>
+            <div class="team" id="teamC">
+                <h2>Team C</h2>
+            </div>
+            <div class="team" id="teamD">
+                <h2>Team D</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

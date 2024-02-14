@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+ 
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 36px;
+        
+}
+
+body {
+    background-color: #0a1d17;
+    color: white;
+    
+}
+
+.container {
+    width: 70%;
+    height: auto;
+    margin: 16px auto;
+    border: 1px solid whitesmoke;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.container h2, .container button {
+    align-self: center;
+}
+
+.teamGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: yellow 2px solid; */
+    padding: 16px;
+}
+
+.teamGrid h2 {
+    font-size: 36px;
+}
+
+
+.btn {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+ box-shadow: 0px 0px 16px white;
+ transition: 200ms;
+ scale: 1.1;
+ background: darkgreen;
+}
+
+.genderDiv, .nationDiv {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 1rem;
+    /* align-self: center; */
+}
+.genderDiv div,
+.nationDiv div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.genderDiv label,
+.nationDiv label {
+    margin-right: 16px;
+}
+
+.inputChoice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+
+}
+
+
+
+/* CheckBox nullifying funky SImon thing/ */
+input[type='checkbox'] {
+
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+
+margin: 0;
+
+font: inherit;
+color: currentColor;
+width: 1.15em;
+height: 1.15em;
+border: 0.15em solid currentColor;
+border-radius: 0.15em;
+transform: translateY(-0.075em);
+display: grid;
+place-content: center;
+}
+
+input[type='checkbox']::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em white;
+}
+
+input[type='checkbox']::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em white;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type='checkbox']:checked::before {
+    transform: scale(1);
+}
+
+input[type='checkbox']:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
