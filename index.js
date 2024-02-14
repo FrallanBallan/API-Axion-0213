@@ -55,7 +55,7 @@ function renderUser(dudeman) {
 
   if (dudeman.gender === "female") {
     teamA.append(paraTeam);
-  } else if (!teamB.includes(dudeman.nat)) {
+  } else if (!teamB.innerHTML.includes(dudeman.nat)) {
     teamB.append(paraTeam);
   } else if (dudeman.gender === "male" && dudeman.nat === "US") {
     teamC.append(paraTeam);
